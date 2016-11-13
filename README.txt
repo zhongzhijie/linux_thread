@@ -1,0 +1,5 @@
+thread1：线程创建、同步和删除
+thread2：线程同步执行，通过对一个全局变量的轮询控制
+thread3：通过信号量sem_t实现同步
+thread4：通过pthread_mutex_t实现互斥
+thread5：基本多线程创建

@@ -1,4 +1,4 @@
-all:thread1 thread2 thread3 thread4 thread5 thread6 thread7
+all:thread1 thread2 thread3 thread4 thread5 thread6 thread7 thread8
 
 thread1: thread1.c
 	gcc -D_REENTRANT thread1.c -o thread1 -lpthread
@@ -21,5 +21,7 @@ thread6: thread6.c
 thread7: thread7.c
 	gcc -D_REENTRANT thread7.c -o thread7 -lpthread
 
+thread8: thread8.c
+	gcc -D_REENTRANT thread8.c -o thread8 -lpthread
 clean: 
-	rm -f thread1 *.o thread2 thread3 thread4 thread5 thread6 thread7
+	rm -f thread1 *.o thread2 thread3 thread4 thread5 thread6 thread7 thread8
